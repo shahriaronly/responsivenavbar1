@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive web desing</title>
+    <style>
+        .main-contain{
+            background: lightblue;
+            display: flex;
+            justify-content: flex-end ;
+
+        }
+        .main-contain a{
+            text-decoration: none;
+            padding: 30px;
+            color: white;
+            margin-right: 40px;
+            
+        }
+        .main-contain a:hover{
+            background-color: teal;
+            
+        }
+        @media screen and (max-width: 700px){
+            .main-contain{
+               
+                flex-direction: column;
+                
+            }
+            .main-contain a{
+                background-color: gold;
+                margin: 10px 0px;
+                text-align:center;
+                border-radius: 20px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main-contain">
+             <a href="#">home</a>
+             <a href="#">manu</a>
+             <a href="#">protefolio</a>
+             <a href="#">contact</a>
+
+
+
+    </div>
+</body>
+</html>
